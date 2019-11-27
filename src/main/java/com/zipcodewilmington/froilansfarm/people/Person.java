@@ -6,12 +6,14 @@ import com.zipcodewilmington.froilansfarm.interfaces.NoiseMaker;
 import com.zipcodewilmington.froilansfarm.interfaces.Rideable;
 import com.zipcodewilmington.froilansfarm.sandyPantry.FoodOrganizer;
 
+import java.util.HashMap;
+
 public class Person implements NoiseMaker, Eater {
 
     private Pilot pilot;
     private String name;
-    private  Edibles edible;
-    private FoodOrganizer foodOrganizer;
+
+    //private FoodOrganizer food = new FoodOrganizer();
 
 
     public String getName() {
@@ -22,10 +24,9 @@ public class Person implements NoiseMaker, Eater {
         this.name = name;
     }
 
-
+    @Override
     public void eat(Edibles edible, Integer num) {
-        this.edible = edible;
-        foodOrganizer.take(edible, num);
+//        food.take(edible, num);
 
     }
 

@@ -7,9 +7,10 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class PersonTest {
+    FoodOrganizer food;
 
     @Test
-    public void testPersonConstructor(String name) {
+    public void testPersonConstructor() {
         Person bob = new Person("Bob");
         String expected = "Bob";
         String actual = bob.getName();
@@ -29,7 +30,5 @@ public class PersonTest {
         Integer actual = foodOrganizer.getNumOfEdibles(grapes);
         Assert.assertEquals(expected, actual);
 
-
-        Assert.assertEquals(expected, actual);
     }
 }

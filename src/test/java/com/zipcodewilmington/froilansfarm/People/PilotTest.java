@@ -27,8 +27,6 @@ public class PilotTest {
         Integer actual = foodOrganizer.getNumOfEdibles(tomatos);
         Assert.assertEquals(expected, actual);
 
-
-        Assert.assertEquals(expected, actual);
     }
 
 

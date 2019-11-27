@@ -14,11 +14,20 @@ public class Pilot extends Person {
         super(name);
     }
 
-    public void fly(Aircraft aircraft)    {
+    public void fly(Aircraft aircraft) {
         this.aircraft.fly(field);
+
     }
 
-    public void land(Aircraft aircraft)    {
+    public void mount(Rideable rideable) {
+        rideable.mounted();
+    }
+
+    public void dismount(Rideable rideable) {
+        rideable.dismounted();
+    }
+
+    public void land(Aircraft aircraft) {
         this.aircraft.land();
     }
 

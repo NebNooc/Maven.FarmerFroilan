@@ -31,7 +31,7 @@ public class Botonist extends Farmer{
     }
 
     public ArrayList<Crop> produce(Integer num)    {
-        ArrayList<Crop> edibles = new ArrayList<Crop>(num);
+        ArrayList<Crop> edibles = new ArrayList<>();
         return edibles;
     }
 

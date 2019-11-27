@@ -53,7 +53,7 @@ public class DaysOfTheWeekTests {
         Assert.assertFalse(horse1.dismounted());
         Assert.assertFalse(horse2.dismounted());
 
-        froilanda.mount(cropDuster);
+
         cropDuster.fly(field);
 
     }

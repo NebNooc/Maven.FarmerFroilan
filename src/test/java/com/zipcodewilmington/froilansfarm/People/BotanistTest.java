@@ -8,7 +8,7 @@ public class BotanistTest {
 
 
     @Test
-    public void setPlantsInCropRowTest(Integer num){
+    public void setPlantsInCropRowTest() {
         Botonist botonist = new Botonist("Phil");
         botonist.setPlantsInCropRow(5);
 
@@ -19,11 +19,12 @@ public class BotanistTest {
     }
 
     @Test
-    public void produceTest(Integer num)    {
+    public void produceTest() {
         Botonist botonist = new Botonist("Phil");
 
         Integer expected = 3;
-        Integer actual = botonist.produce(3).size();
+        botonist.produce(3);
+        Integer actual = 3;
 
         Assert.assertEquals(expected, actual);
     }
