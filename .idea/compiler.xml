@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="froilans-farm" target="1.5" />
+      <module name="froilans-farm" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -9,10 +9,30 @@ import static org.junit.Assert.*;
 
 public class TomatoPlantsTest {
     @Test
-    public void yieldTomatoTest(){
+    public void yieldTomatoTest1(){
         TomatoPlants tomatoPlants = new TomatoPlants();
-        Tomatos tomato = tomatoPlants.yield();
-        Assert.assertTrue(tomato instanceof Edibles);
+        tomatoPlants.hasBeenFertilized = true;
+        tomatoPlants.hasBeenHarvested = true;
+        Tomatos[] tomato = tomatoPlants.yield();
+        Assert.assertTrue(tomato[0] instanceof Edibles);
+    }
+
+    @Test
+    public void yieldTomatoTest2(){
+        TomatoPlants tomatoPlants = new TomatoPlants();
+        tomatoPlants.hasBeenFertilized = true;
+        tomatoPlants.hasBeenHarvested = false;
+        Tomatos[] tomato = tomatoPlants.yield();
+        Assert.assertNull(tomato);
+    }
+
+    @Test
+    public void yieldTomatoTest3(){
+        TomatoPlants tomatoPlants = new TomatoPlants();
+        tomatoPlants.hasBeenFertilized = false;
+        tomatoPlants.hasBeenHarvested = true;
+        Tomatos[] tomato = tomatoPlants.yield();
+        Assert.assertNull(tomato);
     }
 
 
