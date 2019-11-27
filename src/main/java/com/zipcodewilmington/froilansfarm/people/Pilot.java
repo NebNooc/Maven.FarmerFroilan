@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm.people;
 
+import com.zipcodewilmington.froilansfarm.edibles.Edibles;
 import com.zipcodewilmington.froilansfarm.interfaces.Rideable;
 import com.zipcodewilmington.froilansfarm.mainFarm.Field;
 import com.zipcodewilmington.froilansfarm.vehicles.Aircraft;
@@ -9,22 +10,21 @@ public class Pilot extends Person {
     Field field;
 
 
-    Pilot(String name) {
+    public Pilot(String name) {
         super(name);
     }
 
-    public void mount(Aircraft aircraft)    {
+    public void fly(Aircraft aircraft)    {
         this.aircraft.fly(field);
-
     }
 
-
-    public void disMount(Aircraft aircraft) {   //need a method to stop flying in aircraft.
-
+    public void land(Aircraft aircraft)    {
+        this.aircraft.land();
     }
 
-
-
-
+    @Override
+    public void eat(Edibles edible) {
+        super.eat(edible);
+    }
 
 }

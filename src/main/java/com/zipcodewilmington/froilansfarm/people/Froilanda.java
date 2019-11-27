@@ -5,20 +5,18 @@ import com.zipcodewilmington.froilansfarm.interfaces.Eater;
 import com.zipcodewilmington.froilansfarm.interfaces.Rideable;
 import com.zipcodewilmington.froilansfarm.interfaces.Rider;
 
-public class Froilanda extends Pilot implements Eater, Rider {
+public class Froilanda extends Pilot {
     public Froilanda(String name) {
         super(name);
     }
 
-    public void Eat(Edibles edible) {
-
+    @Override
+    public void eat(Edibles edible) {
+        super.eat(edible);
     }
 
     public void mount(Rideable rideable) {
         rideable.mounted();
     }
 
-    public void dismount(Rideable rideable) {
-        rideable.dismounted();
-    }
 }

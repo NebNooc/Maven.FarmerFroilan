@@ -9,6 +9,7 @@ public class Person implements NoiseMaker, Eater {
 
     private Pilot pilot;
     private String name;
+    private  Edibles edible;
 
 
     public String getName() {
@@ -20,7 +21,9 @@ public class Person implements NoiseMaker, Eater {
     }
 
 
-    public void Eat(Edibles edible) {
+    public void eat(Edibles edible) {
+        this.edible = edible;
+        edible.remove(edible);
 
     }
 
