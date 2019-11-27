@@ -11,6 +11,8 @@ public class PotatoPlantsTest {
     @Test
     public void yieldPotatoTest(){
         PotatoPlants potatoPlants = new PotatoPlants();
+        potatoPlants.hasBeenFertilized = true;
+        potatoPlants.hasBeenHarvested = true;
         Potatos[] potato = potatoPlants.yield();
         Assert.assertTrue(potato[0] instanceof Edibles);
     }

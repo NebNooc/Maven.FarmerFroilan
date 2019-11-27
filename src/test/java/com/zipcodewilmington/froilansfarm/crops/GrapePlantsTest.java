@@ -12,6 +12,8 @@ public class GrapePlantsTest {
     @Test
     public void yieldGrapeTest(){
         GrapePlants grapePlants = new GrapePlants();
+        grapePlants.hasBeenFertilized = true;
+        grapePlants.hasBeenHarvested = true;
         Grapes[] grape = grapePlants.yield();
         Assert.assertTrue(grape[0] instanceof Edibles);
     }
