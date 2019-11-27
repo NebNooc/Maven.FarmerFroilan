@@ -12,7 +12,8 @@ public class Botonist extends Farmer{
 
 
 
-    Botonist(String name) {
+
+    public Botonist(String name) {
         super(name);
     }
 
@@ -30,12 +31,8 @@ public class Botonist extends Farmer{
     }
 
     public ArrayList<Crop> produce(Integer num)    {
-        ArrayList<Crop> edibles = new ArrayList<Crop>();
+        ArrayList<Crop> edibles = new ArrayList<Crop>(num);
         return edibles;
     }
-
-
-
-
 
 }

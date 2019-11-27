@@ -1,7 +1,6 @@
 package com.zipcodewilmington.froilansfarm.people;
 
 
-import com.zipcodewilmington.froilansfarm.crops.Crop;
 import com.zipcodewilmington.froilansfarm.edibles.Edibles;
 import com.zipcodewilmington.froilansfarm.interfaces.Rideable;
 import com.zipcodewilmington.froilansfarm.interfaces.Rider;

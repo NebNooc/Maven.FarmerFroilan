@@ -11,8 +11,11 @@ public class Person implements NoiseMaker, Eater {
     private String name;
 
 
+    public String getName() {
+        return this.name;
+    }
 
-    Person(String name) {
+    public Person(String name) {
         this.name = name;
     }
 

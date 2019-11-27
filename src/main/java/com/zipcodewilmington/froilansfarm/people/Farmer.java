@@ -10,8 +10,14 @@ public class Farmer extends Person {
 
 
 
-    Farmer(String name) {
+    public Farmer(String name) {
         super(name);
+    }
+
+    public String getFarmerName()   {
+        return super.getName();
+
+
     }
 
 
