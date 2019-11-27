@@ -12,7 +12,7 @@ public class GrapePlantsTest {
     @Test
     public void yieldGrapeTest(){
         GrapePlants grapePlants = new GrapePlants();
-        Grapes grape = GrapePlants.yield();
-        Assert.assertTrue(grape instanceof Edibles);
+        Grapes[] grape = grapePlants.yield();
+        Assert.assertTrue(grape[0] instanceof Edibles);
     }
 }

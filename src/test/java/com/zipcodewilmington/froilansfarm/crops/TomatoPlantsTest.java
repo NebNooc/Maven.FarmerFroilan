@@ -11,8 +11,8 @@ public class TomatoPlantsTest {
     @Test
     public void yieldTomatoTest(){
         TomatoPlants tomatoPlants = new TomatoPlants();
-        Tomatos tomato = tomatoPlants.yield();
-        Assert.assertTrue(tomato instanceof Edibles);
+        Tomatos[] tomato = tomatoPlants.yield();
+        Assert.assertTrue(tomato[0] instanceof Edibles);
     }
 
 }

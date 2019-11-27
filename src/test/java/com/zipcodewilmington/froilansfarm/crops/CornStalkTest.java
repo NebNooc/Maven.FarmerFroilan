@@ -12,8 +12,8 @@ public class CornStalkTest {
     @Test
     public void yieldCornTest(){
         CornStalk cornStalk = new CornStalk();
-        Corn corn = CornStalk.yield();
-        Assert.assertTrue(corn instanceof Edibles);
+        Corn[] corn = cornStalk.yield();
+        Assert.assertTrue(corn[0] instanceof Edibles);
     }
 
 }

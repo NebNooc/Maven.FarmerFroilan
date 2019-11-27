@@ -11,8 +11,8 @@ public class WatermelonPlantsTest {
     @Test
     public void yieldWatermelonTest(){
         WatermelonPlants watermelonPlants = new WatermelonPlants();
-        Watermelon watermelon = watermelonPlants.yield();
-        Assert.assertTrue(watermelon instanceof Edibles);
+        Watermelon[] watermelon = watermelonPlants.yield();
+        Assert.assertTrue(watermelon[0] instanceof Edibles);
     }
 
 }
