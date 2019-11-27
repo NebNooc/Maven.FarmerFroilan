@@ -22,15 +22,14 @@ public class FoodOrganizer {
         }
     }
 
-    public Edibles take(Edibles edibles, Integer num) {
+    public void take(Edibles edibles, Integer num) {
         if(!food.containsKey(edibles))
-            return null;
+            System.out.println("You done fucked up");
         else if(food.get(edibles) < num)
-            return null;
+            System.out.println("You done fucked up");
         else {
             Integer newNum = food.get(edibles) - num;
             food.replace(edibles, newNum);
-            return edibles;
         }
     }
 
