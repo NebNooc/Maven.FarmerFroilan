@@ -41,7 +41,7 @@ public class Tractor extends Vehicle implements FarmVehicles {
         return wasRidden;
     }
 
-    public void harvest(CropRow cropRow){
+    public void harvest(){
 
 
 

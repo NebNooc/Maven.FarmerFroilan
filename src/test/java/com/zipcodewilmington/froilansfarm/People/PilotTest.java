@@ -14,21 +14,6 @@ import org.junit.Test;
 public class PilotTest {
 
 
-    @Test
-    public void pilotEatTest() {
-        Pilot pilot = new Pilot("Mac");
-        Tomatos tomatos = new Tomatos();
-
-        FoodOrganizer foodOrganizer = new FoodOrganizer();
-        foodOrganizer.add(tomatos, 4);
-        pilot.eat(tomatos, 3);
-
-        Integer expected = 1;
-        Integer actual = foodOrganizer.getNumOfEdibles(tomatos);
-        Assert.assertEquals(expected, actual);
-
-    }
-
 
     @Test
     public void testFly() {

@@ -18,17 +18,5 @@ public class PersonTest {
         Assert.assertEquals(expected, actual);
     }
 
-    @Test
-    public void personEatTest() {
-        Person person = new Person("Bill");
-        FoodOrganizer foodOrganizer = new FoodOrganizer();
-        Grapes grapes = new Grapes();
-        foodOrganizer.add(grapes, 4);
-        person.eat(grapes, 3);
 
-        Integer expected = 1;
-        Integer actual = foodOrganizer.getNumOfEdibles(grapes);
-        Assert.assertEquals(expected, actual);
-
-    }
 }

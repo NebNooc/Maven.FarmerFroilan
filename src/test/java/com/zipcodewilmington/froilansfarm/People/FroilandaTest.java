@@ -12,19 +12,8 @@ import org.junit.Test;
 
 public class FroilandaTest {
 
-    @Test
-    public void froilandaEatTest()  {
-        Froilanda froilanda = new Froilanda("Froilanda");
-        Potatos potatos = new Potatos();
-        FoodOrganizer foodOrganizer = new FoodOrganizer();
-        foodOrganizer.add(potatos, 4);
-        froilanda.eat(potatos, 3);
 
-        Integer expected = 1;
-        Integer actual = foodOrganizer.getNumOfEdibles(potatos);
-        Assert.assertEquals(expected, actual);
 
-    }
 
     @Test
     public void flyTest() {
