@@ -25,4 +25,16 @@ public class HorseTest {
 
         Assert.assertEquals(expected,actual);
     }
+
+    @Test
+    public void wasRiddenTest(){
+        Horse horse = new Horse();
+        Assert.assertTrue(horse.mounted());
+    }
+
+    @Test
+    public void wasDismountedTest(){
+        Horse horse = new Horse();
+        Assert.assertFalse(horse.mounted());
+    }
 }
