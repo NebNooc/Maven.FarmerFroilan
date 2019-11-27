@@ -10,11 +10,12 @@ public class Chicken extends Animals {
         return egg;
     }
 
-    public void Eat(Edibles edible) {
-
-    }
-
     public String makeNoise(){
         return "Cluck cluck";
+    }
+
+    @Override
+    public void eat(Edibles edible, Integer num) {
+
     }
 }

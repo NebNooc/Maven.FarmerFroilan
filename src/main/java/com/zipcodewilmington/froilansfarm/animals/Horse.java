@@ -23,4 +23,9 @@ public class Horse extends Animals implements Rideable {
         wasRidden = false;
         return wasRidden;
     }
+
+    @Override
+    public void eat(Edibles edible, Integer num) {
+
+    }
 }
