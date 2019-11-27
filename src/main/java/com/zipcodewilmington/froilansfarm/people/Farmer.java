@@ -21,7 +21,7 @@ public class Farmer extends Person {
     }
 
     @Override
-    public void eat(Edibles edible) {
-        super.eat(edible);
+    public void eat(Edibles edible, Integer num) {
+        super.eat(edible, num);
     }
 }

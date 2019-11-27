@@ -11,8 +11,8 @@ public class Froilan extends Botonist implements Rider {
     }
 
     @Override
-    public void eat(Edibles edible) {
-        super.eat(edible);
+    public void eat(Edibles edible, Integer num) {
+        super.eat(edible, num);
     }
 
     public void mount(Rideable rideable) {
@@ -23,8 +23,6 @@ public class Froilan extends Botonist implements Rider {
         rideable.dismounted();
     }
 
-    public void gather(){
-        //gather eggs
-    }
+
 
 }

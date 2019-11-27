@@ -3,6 +3,8 @@ package com.zipcodewilmington.froilansfarm.People;
 import com.zipcodewilmington.froilansfarm.edibles.Potatos;
 import com.zipcodewilmington.froilansfarm.mainFarm.Field;
 import com.zipcodewilmington.froilansfarm.people.Froilanda;
+import com.zipcodewilmington.froilansfarm.sandyPantry.FoodOrganizer;
+import com.zipcodewilmington.froilansfarm.sandyPantry.SandyPantry;
 import com.zipcodewilmington.froilansfarm.vehicles.CropDuster;
 import com.zipcodewilmington.froilansfarm.vehicles.Tractor;
 import org.junit.Assert;
@@ -14,7 +16,12 @@ public class FroilandaTest {
     public void froilandaEatTest()  {
         Froilanda froilanda = new Froilanda("Froilanda");
         Potatos potatos = new Potatos();
+        FoodOrganizer foodOrganizer = new FoodOrganizer();
+        foodOrganizer.add(potatos, 4);
+        froilanda.eat(potatos, 3);
 
+        Integer expected = 1;
+        Integer actual = foodOrganizer.getNumOfEdibles(potatos);
         Assert.assertEquals(expected, actual);
 
     }
